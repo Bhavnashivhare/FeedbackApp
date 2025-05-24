@@ -4,7 +4,7 @@ A simple full-stack web application where users can submit feedback. Built with 
 
 ## 🚀 Live Demo
 
-🌐 [Live Link Here](https://your-deployed-link.com)  
+🌐 [Live Link Here](https://feedback-app-brown-one.vercel.app/)  
 📁 [GitHub Repository](https://github.com/Bhavnashivhare/feedback-app)
 
 ---
