@@ -11,7 +11,7 @@ export default function FeedbackList() {
 
   const fetchFeedbacks = async () => {
     try {
-      const res = await axios.get("https://feedback-backend-zne8.onrender.com/feedback");
+      const res = await axios.get("https://feedback-backend-jxvl.onrender.com/feedback");
       setFeedbacks(res.data);
     } catch (err) {
       console.error("Error fetching feedbacks:", err);
