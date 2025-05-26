@@ -12,7 +12,7 @@ export default function FeedbackForm({ onFeedbackSubmitted }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://feedback-backend-lple.onrender.com/feedback", form);
+      await axios.post("http://localhost:5000/feedback", form);
       setForm({ name: "", email: "", message: "" });
       setSuccess(true);
       onFeedbackSubmitted();

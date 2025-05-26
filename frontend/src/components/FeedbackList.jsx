@@ -11,7 +11,7 @@ export default function FeedbackList() {
 
   const fetchFeedbacks = async () => {
     try {
-      const res = await axios.get("https://feedback-backend-lple.onrender.com/feedback");
+      const res = await axios.get("http://localhost:5000/feedback");
       setFeedbacks(res.data);
     } catch (err) {
       console.error("Error fetching feedbacks:", err);
@@ -27,8 +27,9 @@ export default function FeedbackList() {
         <p className="text-gray-400 text-center italic">No feedback submitted yet.</p>
       ) : (
         <div className="space-y-6">
-         {feedbacks.map((fb, index) => (
-             <div key={index}
+          {feedbacks.map((fb) => (
+            <div
+              key={fb.id}
               className="bg-white bg-opacity-5 backdrop-blur-md border border-gray-700 text-white rounded-xl p-6 shadow-lg hover:scale-[1.01] transition-transform duration-300"
             >
               <div className="flex items-center justify-between mb-2">
