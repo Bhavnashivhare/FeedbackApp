@@ -12,7 +12,7 @@ export default function FeedbackForm({ onFeedbackSubmitted }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/feedback", form);
+      await axios.post("https://feedback-backend-zne8.onrender.com/feedback", form);
       setForm({ name: "", email: "", message: "" });
       setSuccess(true);
       onFeedbackSubmitted();
